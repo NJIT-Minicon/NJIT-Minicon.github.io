@@ -161,9 +161,12 @@ footer {
 }
 
 .img-container {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-top: 2em;
+}
+
+.img-container img {
+    max-width: 100%;
 }
 
 hr {

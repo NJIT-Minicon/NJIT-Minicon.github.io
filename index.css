@@ -145,15 +145,15 @@
     table-layout: fixed;
     background-color: var(--color-a);
     border-radius: 1em;
-    padding: 0 1.5rem 0;
+    width: 100%;
 }
 
 #countdown td:not(.separator), #countdown th:not(.separator) {
-    width: 6rem;
+    width: 5rem;
 }
 
 #countdown td {
-    font-size: 4em;
+    font-size: 2em;
     padding: 0 0 1.25rem;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
@@ -163,16 +163,25 @@
 
 #countdown td:not(.separator) {
     color: var(--color-c);
-    padding: 0 0.5rem 0.5rem;
+    padding: 0 0 0.5rem;
+}
+
+.separator {
+    text-align: center;
+    width: 0.5em;
 }
 
 #countdown th, .separator {
     color: var(--color-b);
 }
 
+#countdown th {
+    font-size: 0.75em;
+}
+
 #countdown th:not(.separator) {
     text-transform: uppercase;
-    padding: 1.6rem 0.5rem 0;
+    padding: 1.6rem 0 0;
     line-height: 0.25em;
 }
 
@@ -242,6 +251,17 @@
     display: inline-block;
 }
 
+
+@media (min-width: 576px) {
+    #countdown td {
+        font-size: 3em;
+    }
+
+    .separator {
+        width: 2em;
+    }
+}
+
 @media (min-width: 1024px) {
     #badge-container {
         display: flex;
@@ -253,6 +273,31 @@
 
     .badge h2 {
         height: 6em;
+    }
+
+    #countdown {
+        width: auto;
+        padding: 0 1.5rem 0;
+    }
+
+    #countdown td {
+        font-size: 4em;
+    }
+
+    #countdown th {
+        font-size: 1em;
+    }
+
+    #countdown td:not(.separator) {
+        padding: 0 0.5rem 0.5rem;
+    }
+
+    #countdown th:not(.separator) {
+        padding: 1.6rem 0.5rem 0;
+    }
+
+    .separator {
+        width: auto;
     }
 }
 
