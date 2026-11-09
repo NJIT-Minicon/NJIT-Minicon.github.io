@@ -17,6 +17,14 @@
     main {
         width: 720px;
     }
+
+    .navbar-link:not(.active) {
+        display: flex;
+    }
+
+    .navbar-sm {
+        display: inline !important;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -102,7 +110,7 @@ header {
     text-decoration: none;
     font-size: 1.25em;
     text-transform: uppercase;
-    display: flex;
+    display: none;
     align-items: center;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
@@ -116,6 +124,7 @@ header {
 }
 
 .navbar-link.active {
+    display: flex;
     color: var(--color-b);
 }
 
@@ -123,6 +132,7 @@ header {
     color: var(--color-c);
     margin-right: 0.75em;
     transition: color 0.25s;
+    display: none;
 }
 
 .navbar-sm:hover, footer a:hover {
@@ -130,15 +140,20 @@ header {
 }
 
 aside {
-    background-color: var(--color-d);
+    background-color: var(--color-e);
     padding: 2em;
     text-align: center;
     font-size: 1.25em;
+    color: var(--color-c);
 }
 
 aside span {
     display: inline-block;
     white-space: nowrap;
+}
+
+aside span a {
+    color: var(--color-d);
 }
 
 main {
