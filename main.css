@@ -62,7 +62,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     background-color: #f7accf;
-    background-image: urL("img/bg.jpg");
+    background-image: url("img/bg.jpg");
     background-size: cover;
     background-blend-mode: darken;
     background-attachment: fixed;
