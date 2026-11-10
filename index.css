@@ -133,6 +133,8 @@
     transform: translate(calc(-50% + 160px), calc(-50% + 175px));
     opacity: 0;
     width: calc(min(976px, 80vw) / 976 * 534);
+    /* It's invisible after the intro but was sitting on top of the banner link */
+    pointer-events: none;
 }
 
 #countdown-container {
@@ -251,6 +253,13 @@
     display: inline-block;
 }
 
+
+/* Let the countdown squish on phones so it doesn't poke out the side */
+@media (max-width: 575px) {
+    #countdown td:not(.separator), #countdown th:not(.separator) {
+        width: auto;
+    }
+}
 
 @media (min-width: 576px) {
     #countdown td {

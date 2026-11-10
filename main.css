@@ -171,6 +171,15 @@ aside {
     color: var(--color-c);
 }
 
+/* Banner text is wider than small screens, keep it centered and stop it from making the page scroll sideways */
+@media (max-width: 767px) {
+    aside {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 aside span {
     display: inline-block;
     white-space: nowrap;
@@ -180,11 +189,26 @@ aside span a {
     color: var(--color-d);
 }
 
+/* No marquee with reduced motion, so just let it wrap */
+@media (max-width: 767px) and (prefers-reduced-motion: reduce) {
+    aside span {
+        white-space: normal;
+    }
+}
+
 main {
     background-color: var(--color-c);
     padding: 3em 5em;
     align-self: center;
     margin-bottom: 10em;
+}
+
+/* Phones get the full width, 5em padding is way too much there */
+@media (max-width: 575px) {
+    main {
+        width: 100%;
+        padding: 3em 1.5em;
+    }
 }
 
 main h1 {
