@@ -20,12 +20,25 @@
 </head>
 <body>
     <script>
-        if (location.hash === "#no-intro") {
+        // Remember the intro per tab so #no-intro doesn't end up in links people share
+        let seenIntro = location.hash === "#no-intro";
+        try {
+            seenIntro = sessionStorage.getItem("seen-intro") || seenIntro;
+            sessionStorage.setItem("seen-intro", "1");
+        } catch (e) {}
+        if (seenIntro) {
             document.body.classList.add("no-intro");
         } else {
-            location.hash = "#no-intro";
             document.body.scrollTop = document.documentElement.scrollTop = 0;
         }
+        if (location.hash === "#no-intro") {
+            history.replaceState(null, "", location.pathname + location.search);
+        }
+        // Every #no-intro link on this page points back here, so they don't need to go anywhere
+        document.addEventListener("click", (e) => {
+            const link = e.target.closest("a");
+            if (link && link.hash === "#no-intro") e.preventDefault();
+        });
     </script>
     <header>
         <img id="wordmark" alt="MiniCon 2027" src="img/wordmark.png">
