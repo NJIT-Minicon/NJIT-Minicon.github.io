@@ -19,11 +19,13 @@ const POLICIES = {
     "weapons": {name: "Weapons Policy"}
 }
 
-let active = location.hash.substring(1);
+let active;
 
 // Fetch everything at once instead of one at a time
 Promise.all(["preamble", ...Object.keys(POLICIES)].map(getMD)).then(([preamble, ...policies]) => {
     PREAMBLE.setHTMLUnsafe(marked.parse(preamble));
+    // Read the hash now since it might have changed while loading
+    active = location.hash.substring(1);
     for (const policy in POLICIES) {
         POLICIES[policy].content = marked.parse(policies.shift());
     }
@@ -43,6 +45,8 @@ Promise.all(["preamble", ...Object.keys(POLICIES)].map(getMD)).then(([preamble, 
 });
 
 addEventListener("hashchange", () => {
+    // Tabs aren't there until everything loads, the code above picks up the hash then
+    if (!TABS.children.length) return;
     let newActive = location.hash.substring(1);
     if (!POLICIES[newActive]) {
         location.hash = active;
