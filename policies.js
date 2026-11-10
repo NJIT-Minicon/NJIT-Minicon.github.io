@@ -1,5 +1,8 @@
+const FAILED = "Sorry, this couldn't load. Try refreshing the page, or email us at [miniconservices@gmail.com](mailto:miniconservices@gmail.com).";
+
+// Show a message instead of a 404 page or a blank page if something fails
 async function getMD(name) {
-    return await fetch(`policy/${name}.md`).then(r => r.text());
+    return await fetch(`policy/${name}.md`).then(r => r.ok ? r.text() : FAILED).catch(() => FAILED);
 }
 
 const PREAMBLE = document.querySelector("#preamble");
@@ -16,12 +19,15 @@ const POLICIES = {
     "weapons": {name: "Weapons Policy"}
 }
 
-let active = location.hash.substring(1);
+let active;
 
-getMD("preamble").then(async (preamble) => {
+// Fetch everything at once instead of one at a time
+Promise.all(["preamble", ...Object.keys(POLICIES)].map(getMD)).then(([preamble, ...policies]) => {
     PREAMBLE.setHTMLUnsafe(marked.parse(preamble));
+    // Read the hash now since it might have changed while loading
+    active = location.hash.substring(1);
     for (const policy in POLICIES) {
-        POLICIES[policy].content = marked.parse(await getMD(policy));
+        POLICIES[policy].content = marked.parse(policies.shift());
     }
     for (const policy in POLICIES) {
         const link = document.createElement("a");
@@ -39,6 +45,8 @@ getMD("preamble").then(async (preamble) => {
 });
 
 addEventListener("hashchange", () => {
+    // Tabs aren't there until everything loads, the code above picks up the hash then
+    if (!TABS.children.length) return;
     let newActive = location.hash.substring(1);
     if (!POLICIES[newActive]) {
         location.hash = active;
