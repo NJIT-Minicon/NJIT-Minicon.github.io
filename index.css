@@ -69,6 +69,7 @@
         transform: rotate(-7.5deg) translate(-50%, 30%) scale(0%);
         width: min(976px, 80vw);
         filter: drop-shadow(30px 10px 4px black);
+        opacity: 1;
     }
     50%, 80% {
         bottom: 0;
@@ -76,10 +77,12 @@
         transform: rotate(-7.5deg) translate(-50%, 30%);
         width: min(976px, 80vw);
         filter: drop-shadow(calc(min(976px, 80vw) / 976 * 30) calc(min(976px, 80vw) / 976 * 10) 4px black);
+        opacity: 1;
     }
     100% {
         bottom: 1em;
         left: 0;
+        opacity: 0;
     }
 }
 
@@ -126,6 +129,13 @@
     body:not(.no-animate):not(.no-intro) aside {
         animation: aside 3s;
     }
+}
+
+#wordmark {
+    position: absolute;
+    width: 11em;
+    opacity: 0;
+    pointer-events: none;
 }
 
 #wordmark-caption {

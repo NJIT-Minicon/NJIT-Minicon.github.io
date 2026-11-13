@@ -89,9 +89,10 @@ header {
     z-index: 99;
 }
 
-#wordmark {
+#logo {
+    height: 6.75em;
+    margin-left: 0.5em;
     position: absolute;
-    width: 11em;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -137,7 +138,7 @@ header {
         gap: 0.25em;
     }
 
-    #wordmark, #wordmark-caption {
+    #logo, #wordmark, #wordmark-caption {
         left: 0;
         pointer-events: none;
     }
