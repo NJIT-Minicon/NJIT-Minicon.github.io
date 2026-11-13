@@ -15,6 +15,7 @@ main h1 {
     text-align: center;
     text-decoration: none;
     padding-bottom: 0.25em;
+    border-bottom: solid transparent 1px;
 }
 
 #policies > a.active {
