@@ -1,5 +1,5 @@
-# Exhibitor Hall and Artist Alley Application
-### Artist Alley applications are OPEN.  Please appy [here](https://forms.gle/DKccMFMf3DT5rjDe7).
+## Exhibitor Hall and Artist Alley Application
+### Unfortunately, Artist Alley for MiniCon 2027 applications are now closed. We look foward to having you next year!
 AA application deadline: November 15
 
 ### Exhibitor applications are coming soon!
@@ -80,5 +80,3 @@ Exhibitor vendors with appropriate food certifications are permitted to sell pre
   - Physician's Certificate
   - Code Enforcement approval
 - All paperwork must be submitted **at least 2 weeks prior to the event**
-
-
