@@ -4,6 +4,8 @@ AA application deadline: November 15
 
 ### Exhibitor applications are coming soon!
 
+---
+
 ### Table Policy
 Tables must be manned at all times while the Artist Alley and Exhibitor Hall is open.  The individual who purchased the table must be present at the event.  Proxy selling is strictly prohibited.  Outside of emergencies, early breakdown is prohibited and will result in a permanent ban from future MiniCon events.  All individuals present behind a table must have a valid MiniCon vendor badge.  Additional badges may be purchased for a $10 fee per badge.  A maximum of 4 people can be behind a single, 6ft table, due to safety precautions.
 
@@ -44,39 +46,6 @@ MiniCon has a strict anti-AI policy for our Artist Alley and Exhibitors. MiniCon
 - Handmade pieces (jewelry, sculptures, clothes, crochet/knit items, stuffed animals, other accessories)
 - Commissions
 
-### Sales of Food and Other Consumable Items
-Exhibitor vendors with appropriate food certifications are permitted to sell pre-packaged food items at MiniCon.  Artist Alley vendors are not permitted to sell food items, and must apply for an exhibitor vendor table if they wish to sell food items with proper certification.
+---
 
-### Food Regulations for Exhibitor Vendors (not food trucks):
-- Exhibitor vendors must submit an approved/valid NJ Temporary Retail Food License and/or NJ Cottage Food Operator Permit **at least 2 weeks prior to the event**
-- Labeling: All food must display clear ingredient labels to inform participants of allergens and dietary restrictions
-- All foods must be pre-packaged for individual sale
-- Commercially prepackaged, shelf-stable food items (e.g., packaged cookies, candy bars) and beverages may be sold or distributed without a Food Handler’s Certification.  Goods labeled with “not for resale” are prohibited.
-- Foods containing alcohol, CBD, THD or similar products are not permitted
-- Foods that are susceptible to spoilage, require set temperature control, or have risk of growing bacteria or disease are not permitted for sale. These include, but are not limited to:
-  - Meat and fish
-  - Fresh dairy (milk, cream, cheese, custard, cream cheese, sour cream, pudding, buttercream, meringue, whipped cream, ganache, etc)
-  - Vegetables (fresh, cooked, fried)
-  - Fresh fruit
-  - Fresh flowers
-  - Cooked rice and beans
-  - Tofu
-- Example of accepted food items include:
-  - Baked goods
-  - Candy and fudge
-  - Chocolate-covered nuts and dried fruit
-  - Dried baking mixes, granola mixes, trail mixes, nut mixes
-  - Jams/jellies/preserves
-  - Fruit pies, fruit empanadas, fruit tamales (no meat, fish or vegetable products)
-  - Roasted coffee or dried tea
-  - Popcorn and caramel popcorn
-
-### Food Regulations for Food Trucks:
-- Must submit proof of Food Protection Manager Certification
-- Must submit approved copy of the Mobile Food Unit (Peddler) License from the City of Newark Office of Central Licenses & Permits which includes:
-  - Health Certificate
-  - Fire Permit
-  - Food Handler's Certificate
-  - Physician's Certificate
-  - Code Enforcement approval
-- All paperwork must be submitted **at least 2 weeks prior to the event**
+### Information for Food Vendors is TBU. Stay tuned!

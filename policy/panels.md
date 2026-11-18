@@ -5,6 +5,8 @@ MiniCon is a celebration of people’s passions and interests, and it strives to
 
 Panel/Workshop application deadline: January 20th, 2027
 
+---
+
 ### Panel Policies
 - Panelists are unpaid, volunteer positions.
 - Panelists must be at least 18 years of age.
