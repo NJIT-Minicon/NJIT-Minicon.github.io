@@ -24,7 +24,7 @@
         let seenIntro = location.hash === "#no-intro";
         try {
             seenIntro = sessionStorage.getItem("seen-intro") || seenIntro;
-            // sessionStorage.setItem("seen-intro", "1");
+            sessionStorage.setItem("seen-intro", "1");
         } catch (e) {}
         if (seenIntro) {
             document.body.classList.add("no-intro");
