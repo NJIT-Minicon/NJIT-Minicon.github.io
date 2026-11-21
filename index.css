@@ -43,21 +43,21 @@
         position: absolute;
         bottom: 0;
         left: 50%;
-        transform: rotate(-7.5deg) translate(calc(-50% + min(976px, 80vw) / 976 * 160), calc(30% + min(976px, 80vw) / 976 * 200)) scale(0%);
+        transform: rotate(-7.5deg) translate(calc(-50% + min(976px, 80vw) / 976 * 160), calc(30% + min(976px, 80vw) / 976 * 180)) scale(0%);
         opacity: 100%;
     }
     50%, 80% {
         position: absolute;
         bottom: 0;
         left: 50%;
-        transform: rotate(-7.5deg) translate(calc(-50% + min(976px, 80vw) / 976 * 160), calc(30% + min(976px, 80vw) / 976 * 200));
+        transform: rotate(-7.5deg) translate(calc(-50% + min(976px, 80vw) / 976 * 160), calc(30% + min(976px, 80vw) / 976 * 180));
         opacity: 100%;
     }
     85% {
         position: absolute;
         bottom: 0;
         left: 50%;
-        transform: rotate(-7.5deg) translate(calc(-50% + min(976px, 80vw) / 976 * 160), calc(30% + min(976px, 80vw) / 976 * 200));
+        transform: rotate(-7.5deg) translate(calc(-50% + min(976px, 80vw) / 976 * 160), calc(30% + min(976px, 80vw) / 976 * 180));
         opacity: 0;
     }
 }
@@ -122,7 +122,8 @@
     body:not(.no-animate):not(.no-intro) .navbar-sm,
     body:not(.no-animate):not(.no-intro) footer,
     body:not(.no-animate):not(.no-intro) main,
-    body:not(.no-animate):not(.no-intro) .heading-text {
+    body:not(.no-animate):not(.no-intro) .heading-text,
+    body:not(.no-animate):not(.no-intro) #banner {
         animation: fade-in 3s;
     }
 
@@ -330,4 +331,32 @@
     .badge {
         width: 20%;
     }
+}
+
+#banner-container {
+    position: relative;
+}
+
+#banner {
+    mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+    z-index: -99;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: max(100vw, 1536px);
+}
+
+@media (max-width: 1536px) {
+    #banner {
+        margin: 0 calc((100vw - 1536px) / 2)
+    }
+}
+
+.heading-text {
+    margin: 0;
+    height: calc(max(100vw, 1536px) / 158 * 45);
+    font-size: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

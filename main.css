@@ -56,7 +56,6 @@
 
 body {
     margin: 0;
-    overflow-x: hidden;
     background-color: #f7accf;
     background-image: url("img/bg.jpg");
     background-size: cover;
@@ -68,10 +67,12 @@ body {
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    contain: paint;
 }
 
 header {
     position: sticky;
+    top: 0;
     background-color: var(--color-a);
     background-image: radial-gradient(rgb(0, 0, 0) 14%, transparent 22%), radial-gradient(rgb(0, 0, 0) 14%, transparent 22%);
     background-position: 0 0, 4px 4px;
@@ -86,9 +87,11 @@ header {
 }
 
 #logo {
-    height: 6.75em;
-    margin-left: 0.5em;
+    height: 160px;
+    top: -0.5em;
+    left: 1em;
     position: absolute;
+    filter: drop-shadow(5px 5px 4px black);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -133,7 +136,7 @@ header {
         gap: 0.25em;
     }
 
-    #logo, #wordmark, #wordmark-caption {
+    #wordmark, #wordmark-caption {
         left: 0;
         pointer-events: none;
     }

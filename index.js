@@ -1,4 +1,4 @@
-const END_DATE = new Date("2027-04-03T10:00-04:00");
+const END_DATE = new Date("2027-04-11T10:00-04:00");
 const COUNTDOWN_DAYS = document.querySelector("#countdown-days");
 const COUNTDOWN_HOURS = document.querySelector("#countdown-hours");
 const COUNTDOWN_MINUTES = document.querySelector("#countdown-minutes");
