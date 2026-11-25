@@ -1,6 +1,7 @@
 const APPLICATIONS = {
     "exhibitor-artist-alley": {name : "Exhibitor Hall and Artist Alley"},
-    "panels": {name: "Panelist"},
+    "judge": {name: "Judges"},
+    "panels": {name: "Panelists"},
     "programming": {name: "Programming"},
     "volunteers": {name: "Volunteers"}
 }
